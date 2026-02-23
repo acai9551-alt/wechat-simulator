@@ -555,7 +555,6 @@ const ROUNDS_DATA = {
     // 多选成就判定
     multiSelectAchievements: {
       'A':  {icon:'✨',name:'极简主义者',desc:'一个看，一个摇——发现身边的人。'},
-      'AB': {icon:'🌙',name:'Prove You\'re Right',desc:'成功解锁迈克尔·杰克逊开机画面。'},
       'ABC':{icon:'💪',name:'全都要',desc:'资源撑得住吗？'}
     }
   }

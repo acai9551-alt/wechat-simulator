@@ -1775,7 +1775,6 @@ const Game = {
     // ===== 第一章：萌芽期（Round 1-3） =====
     {icon:'🛋️',name:'南通6楼的幽灵',desc:'你可能发明了另一个邮箱。',hint:'试试在第2轮做一个不同寻常的选择',chapter:1,round:2},
     {icon:'✨',name:'极简主义者',desc:'你做了一个无法被超越的功能。',hint:'极简方能不被超越',chapter:1,round:3},
-    {icon:'🌙',name:'Prove You\'re Right',desc:'成功解锁迈克尔·杰克逊开机画面。',hint:'找到让小龙愿意用MJ做开机页的功能组合',chapter:1,round:3},
     {icon:'💪',name:'全都要',desc:'资源撑得住吗？',hint:'试试全选',chapter:1,round:3},
     {icon:'🏃',name:'日拱一卒',desc:'每一步都踩在了历史的脚印上。',hint:'每一步都踩在历史的脚印上',chapter:1,round:3},
     {icon:'🧘',name:'克制大师',desc:'你从未选择最激进的那条路。',hint:'从不选择最激进的那条路',chapter:1,round:3},

@@ -1572,10 +1572,6 @@ body {
 /* 结算页激活时：手机壳保持原始尺寸，结算内容在壳内滚动 */
 body.end-screen-active .message-flow {
   padding:0 !important;
-  background: #0a0e14 !important;
-}
-body.end-screen-active #scene-game {
-  background: #0a0e14 !important;
 }
 body.end-screen-active .game-header { display:none !important; }
 
