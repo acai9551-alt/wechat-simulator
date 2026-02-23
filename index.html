@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>微信创业模拟器</title>
+<link rel="stylesheet" href="style.css?v=86">
+</head>
+<body>
+<div class="phone-container">
+<div class="phone-power-btn"></div>
+<div class="phone-vol-up"></div>
+<div class="phone-vol-down"></div>
+<div class="phone-screen">
+  <!-- What's New 全屏过渡 -->
+  <div class="whatsnew-overlay" id="whatsnewOverlay">
+    <img class="whatsnew-img" id="whatsnewImg" alt="">
+    <div class="whatsnew-ver" id="whatsnewVer"></div>
+    <button class="whatsnew-btn" id="whatsnewBtn">进入微信</button>
+  </div>
+  <div class="achievement-toast" id="achievementToast">
+    <span class="at-icon" id="atIcon"></span>
+    <div class="at-text">
+      <div class="at-title">成就解锁</div>
+      <div class="at-name" id="atName"></div>
+      <div class="at-desc" id="atDesc"></div>
+    </div>
+  </div>
+  <!-- 截图预览层 -->
+  <div class="screenshot-preview" id="screenshotPreview" onclick="this.classList.remove('show')">
+    <img id="spImage" alt="">
+    <div class="sp-caption" id="spCaption"></div>
+  </div>
+  <!-- 序章 -->
+  <div class="scene active" id="scene-prologue">
+    <div class="prologue-content" id="prologueContent"></div>
+    <div class="prologue-tap-hint" id="tapHint">点击屏幕继续</div>
+  </div>
+  <!-- 序章选择 -->
+  <div class="scene" id="scene-choice"></div>
+  <!-- 游戏主界面 -->
+  <div class="scene" id="scene-game">
+    <div class="game-header">
+      <div class="game-header-inner">
+        <div class="gh-left">
+          <span class="gh-back-text" id="eraBarVer">demo</span>
+        </div>
+        <div class="gh-center">
+          <div class="round-title" id="roundTitle">按住说话</div>
+          <div class="round-info" id="roundInfo">第1轮 · 萌芽期</div>
+        </div>
+        <div class="gh-right">
+          <span class="round-year" id="roundYear">2011</span>
+        </div>
+      </div>
+    </div>
+    <div class="message-flow" id="messageFlow"></div>
+    <!-- 数值浮窗（微信小程序浮窗风格） -->
+    <div class="stats-fab" id="statsFab">
+      <div class="stats-fab-icon" id="statsFabIcon">&gt;_</div>
+      <div class="stats-fab-badge" id="statsFabBadge"></div>
+      <div class="stats-fab-ach-badge" id="statsFabAchBadge"></div>
+    </div>
+    <div class="stats-panel-overlay" id="statsPanelOverlay">
+      <div class="stats-panel-sheet" id="statsPanelSheet">
+        <div class="sps-header">
+          <span class="sps-title">SYSTEM MONITOR</span>
+          <span class="sps-close" id="statsPanelClose"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg></span>
+        </div>
+        <div class="sfp-grid" id="statsPanel"></div>
+        <div class="sfp-feedback" id="statsFeedback"></div>
+        <div class="sfp-achievements" id="sfpAchievements"></div>
+      </div>
+    </div>
+    <div class="game-choices" id="gameChoices"></div>
+    <!-- 轮次过渡遮罩 -->
+    <div class="round-transition" id="roundTransition">
+      <div class="rt-inner">
+        <div class="rt-phase" id="rtPhase"></div>
+        <div class="rt-round" id="rtRound"></div>
+        <div class="rt-title" id="rtTitle"></div>
+        <div class="rt-year" id="rtYear"></div>
+        <div class="rt-line"></div>
+      </div>
+    </div>
+    <!-- 轮次结算过场（用户反馈弹幕+数值结算） -->
+    <div class="settle-overlay" id="settleOverlay">
+      <div class="settle-danmaku-layer" id="settleDanmaku"></div>
+      <div class="settle-stats-panel" id="settleStats"></div>
+      <div class="settle-bottom-actions" id="settleActions">
+        <div class="settle-continue" id="settleContinue">点击继续</div>
+        <div class="settle-restart" id="settleRestart">重新开始</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script src="gamedata.js?v=86"></script>
+<script src="game.js?v=86"></script>
+</body>
+</html>

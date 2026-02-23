@@ -1,0 +1,6 @@
+<svg viewBox="0 0 90 110" xmlns="http://www.w3.org/2000/svg">
+  <rect width="90" height="110" fill="#e8f0fe"/>
+  <circle cx="45" cy="38" r="16" fill="#b0c4de"/>
+  <ellipse cx="45" cy="82" rx="24" ry="20" fill="#b0c4de"/>
+  <text x="45" y="108" text-anchor="middle" font-size="7" fill="#90a4ae" font-family="sans-serif">点击上传</text>
+</svg>
